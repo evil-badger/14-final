@@ -1,0 +1,85 @@
+@import 'destyle';
+@import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+
+.header{
+    background: url('../img/hlegal_logo_h.png'), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 1600px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1630px;
+    height: 2200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav{
+    &__list{}
+    &__item{}
+    &__link{
+        display: block;
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.contacts{
+    &__list{}
+    &__item{}
+    &__link{
+        &__address{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #FFFFFF;
+        }
+        &__phone{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #FFFFFF;
+        }
+        &__social{}
+    }
+
+    &__language{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        background: #F0145A;
+        border-radius: 8px;
+        padding: 5px 7px;
+    }
+    
+}
