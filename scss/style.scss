@@ -14,12 +14,26 @@ body{
     
 }
 
-
-.header{
+.gradient{
     background: url('../img/hlegal_logo_h.png'), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     background-position: top;
     background-repeat: no-repeat;
     height: 1600px;
+}
+
+.header{
+   display: flex;
+   padding: 50px 0;
+}
+
+.navs{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.logo{
+    display: block;
 }
 
 .container{
@@ -31,8 +45,18 @@ body{
 }
 
 .nav{
-    &__list{}
-    &__item{}
+    &__list{
+        display: flex;
+        justify-content: right;
+    }
+    &__item{
+        margin-right: 15px;
+        &:last-child{
+            margin-right: 0;
+        
+        }
+      
+    }
     &__link{
         display: block;
         color: #FFFFFF;
@@ -41,45 +65,76 @@ body{
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
+        &:hover{ 
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+            color: #F0145A;
+            text-underline-offset: 3px;
+            }
+    }
+}
+
+
+.contacts__facebook:hover{
+    path {
+        fill: red;
     }
 }
 
 .contacts{
-    &__list{}
-    &__item{}
-    &__link{
-        &__address{
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: right;
-            color: #FFFFFF;
-        }
-        &__phone{
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: right;
-            color: #FFFFFF;
-        }
-        &__social{}
-    }
+    display: flex;
+    align-items:center;
+            &__list{
+                display: flex;
+                
+            }
+            
+            &__link{
+                        &__address{
+                                &::before {
+                                    content: "·";
+                                    color: #FFFFFF;
+                                    font-weight: 900;
+                                }
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-align: right;
+                                color: #FFFFFF;
+                            }
 
-    &__language{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 1px;
-        color: #FFFFFF;
-        background: #F0145A;
-        border-radius: 8px;
-        padding: 5px 7px;
-    }
-    
-}
+                        &__phone{
+                            &::before {
+                                content: "·";
+                                color: #FFFFFF;
+                                vertical-align: top;
+                            }
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            text-align: right;
+                            color: #FFFFFF;
+                        }
+                        &__social{}
+            }
+
+            &__language{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                color: #FFFFFF;
+                border-radius: 8px;
+                padding: 5px 7px;
+                &:hover{
+                    background: #F0145A;
+                }
+            }
+           
+        }
