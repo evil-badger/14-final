@@ -429,10 +429,9 @@ body {
   display: block;
 }
 
-.container {
+.container-first {
   width: 100%;
   max-width: 1630px;
-  height: 2200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -515,6 +514,13 @@ body {
 }
 .contacts__language:hover {
   background: #F0145A;
+}
+
+.down__scroll:hover circle {
+  stroke: #F0145A;
+}
+.down__scroll:hover path {
+  stroke: #F0145A;
 }
 
 /*# sourceMappingURL=style.css.map */
