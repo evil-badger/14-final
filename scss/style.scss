@@ -260,7 +260,14 @@ body{
 
     .block{
         display: flex;
+        margin-top: 60px;
         &__card{
             max-width: 494px;
+            &__header{
+                margin-top: 30px;
+            }
+            &__text{
+                margin-top: 15px;
+            }
         }
     }

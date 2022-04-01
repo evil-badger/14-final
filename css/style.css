@@ -632,9 +632,16 @@ body {
 
 .block {
   display: flex;
+  margin-top: 60px;
 }
 .block__card {
   max-width: 494px;
+}
+.block__card__header {
+  margin-top: 30px;
+}
+.block__card__text {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
