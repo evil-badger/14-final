@@ -20,6 +20,9 @@ body{
 
 .gradient{
     background:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 12px 12px;
+
 }
 
 .header{
@@ -70,6 +73,7 @@ body{
 
 
 .nav{
+    margin-top: 16px;
     &__list{
         display: flex;
         justify-content: right;
@@ -117,9 +121,9 @@ body{
             &__link{
                         &__address{
                                 &::before {
-                                    content: "·";
-                                    color: #FFFFFF;
+                                    content: "•";
                                     font-weight: 900;
+                                    margin-right: 6px;
                                 }
                                 font-family: 'Montserrat';
                                 font-style: normal;
@@ -128,14 +132,16 @@ body{
                                 line-height: 20px;
                                 text-align: right;
                                 color: #FFFFFF;
+                                margin-right: 6px;
                             }
 
                         &__phone{
                             &::before {
-                                content: "·";
-                                color: #FFFFFF;
-                                vertical-align: top;
+                                content: "•";
+                                font-weight: 900;
+                                margin-right: 6px;
                             }
+                            
                             font-family: 'Montserrat';
                             font-style: normal;
                             font-weight: 700;
@@ -143,8 +149,17 @@ body{
                             line-height: 20px;
                             text-align: right;
                             color: #FFFFFF;
+                            margin-right: 6px;
+                            &::after {
+                                content: "•";
+                                font-weight: 900;
+                                color: #FFFFFF;
+                                margin-left: 6px;
+                            }
                         }
-                        &__social{}
+                        &__social{
+                         
+                        }
             }
 
             &__language{
@@ -250,6 +265,14 @@ body{
         margin-bottom:30px;
     }
 
+    .margin_right_60{
+        margin-right:60px;
+    }
+
+    .margin_bottom_87{
+        margin-bottom: 87px;
+    }
+
     .gradient_red{
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
@@ -265,9 +288,118 @@ body{
             max-width: 494px;
             &__header{
                 margin-top: 30px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: #24A3FF;
             }
             &__text{
                 margin-top: 15px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
             }
         }
     }
+
+.border{
+    &__prelast{
+        max-width: 1880px;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        margin: auto;
+    }
+    &__last{
+        max-width: 1840px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        margin: auto;
+    }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper{
+padding-bottom: 52px;
+}
+
+.mycard{
+    display: flex;
+    max-width: 1600px;
+    background: #F5F5FA;
+    border-radius: 12px;
+    &__description{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: left;
+        &__team{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #24A3FF;
+            margin-bottom: 5px;
+        }
+        &__about{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        &__person{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #B3B3BA;
+            margin-top: 30px;
+        }
+        &__rank{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #B3B3BA;
+        margin-top: 6px;
+        }
+    }
+}
+
+.img_border{
+    max-width: 400px;
+    max-height: 298px;
+}
+
+.padding_bottom_60{
+    padding-bottom: 60px;
+}
