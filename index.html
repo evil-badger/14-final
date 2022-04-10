@@ -37,6 +37,34 @@
                     </nav> 
                 </div>
             </header>
+           
+            <header class="header_768">
+                    <div class="contacts">
+                            <a href="" class="contacts__link"> <button class="contacts__language">УК</button> </a> 
+                            <a href="" class="contacts__link"> <button class="contacts__language">РУ</button> </a> 
+                            <a href="" class="contacts__link"> <button class="contacts__language">EN</button> </a> 
+                            <a href="" class="contacts__link__address"> Kyiv, Mechnikova str, 14/1</a> 
+                            <a href="tel:0800211927" class="contacts__link__phone">0800 211 927</a> 
+                            <a href="https://facebook.com" class="contacts__link__social">
+                                <svg class="contacts__facebook"width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                                </svg>
+                            </a> 
+                    </div>  
+                    <a href="" class="logo_768"> <img class="logo__img" src="img/logo_768.png" alt="hlegal logo" class="logo_img"> </a>
+                    <nav class="nav_768">
+                        <ul class="nav__list_768">
+                            <li class="nav__item"> <a href="" class="nav__link">about us</a> </li>
+                            <li class="nav__item"> <a href="" class="nav__link">services</a> </li>
+                            <li class="nav__item"> <a href="" class="nav__link">team</a> </li>
+                            <li class="nav__item"> <a href="" class="nav__link">publications</a> </li>
+                            <li class="nav__item"> <a href="" class="nav__link">contact</a> </li>
+                        </ul>
+                    </nav> 
+                
+            </header>
+
+
             <div class="title">you legal solutions provider</div>
             <div class="down"> 
                 <a href="#present">
@@ -48,11 +76,11 @@
             </div>
         </div>   
         <div class="container">
-            <div id="present" class="present">
+            <div class="present">
                 <div class="present__advantage">
                     <p class="present__advantage__consistent margin_bottom_30">Consistent</p>
                     <p class="present__advantage__customer margin_bottom_30">Customer oriented</p>
-                    <p class="present__advantage__business margin_bottom_30">Innovative</p>
+                    <p class="present__advantage__innovative margin_bottom_30">Innovative</p>
                     <p class="present__advantage__business">Business oriented</p>
                 </div>
                 <section class="present__description">
@@ -62,6 +90,7 @@
                     </p>
                 </section>
             </div>  
+
             <p class="services">Services ></p>
             <p class="services__goal gradient_red">What can we do better than others?</p>
             <div class="block">
@@ -110,7 +139,14 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="mycard">
-                            <img class="img_border" src="img/ceo.png" alt="">
+                            <picture>
+                                <source srcset="img/ceo-375.png" media="(max-width: 375px)">
+                                <source srcset="img/ceo-768.png" media="(max-width: 768px)">
+                                <source srcset="img/ceo-1024.png" media="(max-width: 1024px)">
+                                <source srcset="img/ceo-1440.png" media="(max-width: 1440px)">
+                                <source srcset="img/ceo.png">
+                                <img srcset="img/ceo.png" alt="My default image">
+                            </picture>
                             <div class="mycard__description">
                                 <p class="mycard__description__team">команда ></p>
                                 <article class="mycard__description__about">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</article>
@@ -121,7 +157,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="mycard">
-                            <img class="img_border" src="img/hackerman.jpg" alt="">
+                            
                             <div class="mycard__description">
                                 <p class="mycard__description__team">команда ></p>
                                 <article class="mycard__description__about">Но придется учесть что это стартап, и основатель работает за троих - он же тимлид, он же прожект-менеджер. Нам нужны люди в команду - юристы, девопсы, тестировщики, вебмастер, сетевики.</article>
@@ -132,7 +168,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="mycard">
-                        <img class="img_border" src="img/team.jpg" alt="">
+                      
                         <div class="mycard__description">
                             <p class="mycard__description__team">команда ></p>
                             <article class="mycard__description__about">Собственно идеальный варианты команды - каждый типаж интересен по своему, отдельно нужно отметить разработчика индийского происхождения - он бекэнд на джаве умеет </article>

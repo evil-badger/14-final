@@ -26,8 +26,27 @@ body{
 }
 
 .header{
-   display: flex;
+   display: none;
    padding: 50px 0;
+}
+
+.header_768{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .logo_768{
+     margin-top: 30px;
+ }
+
+ .nav_768{
+    margin-top: 30px;
+ }
+
+ .nav__list_768{
+    display: flex;
+    justify-content: left;
 }
 
 .navs{
@@ -195,6 +214,8 @@ body{
         }  
         &__customer{ 
             color: #F0145A; 
+            min-width: 375px;
+            text-align: left;
             &:hover{ color: yellow; } 
         }
         &__business{
@@ -204,6 +225,14 @@ body{
             color: #B3B3BA;
             &:hover{ color: yellow; } 
         }
+        &__innovative{
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            color: #B3B3BA;
+            &:hover{ color: yellow; } 
+        }
+
     }
     &__description{
         display: flex;
@@ -231,10 +260,10 @@ body{
     line-height: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #F0145A;
+    color: #24A3FF;
     margin-top: 49px;
     &:hover{
-        color: yellow;
+        color:#F0145A;
     }
     &__goal{
         font-weight: 700;
@@ -367,11 +396,6 @@ padding-bottom: 52px;
     }
 }
 
-.img_border{
-    max-width: 400px;
-    max-height: 298px;
-}
-
 .padding_bottom_60{ padding-bottom: 60px; }
 
 .intro{
@@ -451,7 +475,6 @@ padding-bottom: 52px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
     }
 }
 
@@ -570,5 +593,102 @@ padding-bottom: 52px;
             color: #24A3FF;
         }
    
+    }
+}
+
+@media (max-width:1440px)
+{
+    .container_first{
+        margin: 0 60px;
+    }
+    .container{
+        margin: 0 60px;
+    }
+   .present__description{
+       max-width: 581px;
+       margin-top: 43px;
+   }
+   .present__advantage{
+       margin-left: 120px;
+       max-height: 303px;
+   }
+   .block__card{
+       max-width: 400px;
+   }
+ 
+   .mycard__description__about{
+       max-width: 860px;
+   }
+
+   .container_main{
+       padding: 0;
+   }
+   .clients{
+        &__item{
+            min-width: 360px;
+        }
+    }
+    .hillel, .dlook, .ingratek, .ultimatecard{
+        border-radius: 0;
+    }
+}
+
+@media (max-width:1024px){
+    .container{
+        padding: 0;
+    }
+    .present__advantage{
+        margin:0;
+    }
+    .present__description{
+        max-width: 405px;
+        margin-top: 0px;
+    }
+    .block__card{
+        max-width: 262px;
+    }
+
+    .mycard__description{
+        max-width: 504px;
+    }
+
+    .swiper-wrapper{
+        padding:0;
+    }
+
+    .clients__item{
+        min-width: 256px;
+    }
+
+    .publications__card{
+        max-width: 282px;
+    }
+
+    .clients{
+        &__item{
+            min-width: 256px;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .present{
+        flex-direction: column;
+        &__advantage{
+            flex-direction: row;
+            border-right: none;
+            border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+            overflow: scroll;
+            gap:30px;
+            &__business{
+                min-width: 358px;
+                text-align: left;
+            }
+        }
+    } 
+
+    .present__description{
+        margin: 60px 0 0 0;
+        max-width: 648px;
     }
 }
