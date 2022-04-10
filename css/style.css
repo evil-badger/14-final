@@ -404,6 +404,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.test {
+  margin-left: 50px;
+}
+
+.test2 {
+  color: white;
+}
+
+.test3 {
+  margin-top: 50px;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat";
@@ -646,6 +658,10 @@ body {
   margin-right: 60px;
 }
 
+.margin_right_30 {
+  margin-right: 30px;
+}
+
 .margin_bottom_87 {
   margin-bottom: 87px;
 }
@@ -707,8 +723,19 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -855,48 +882,167 @@ body {
 }
 
 .publications {
-  background: #F5F5FA;
-}
-.publications__img {
-  max-width: 514px;
-  max-height: 200px;
-  border-radius: 8px 8px 0px 0px;
-}
-.publications__block {
   display: flex;
 }
 
-.theme {
+.publications__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 515px;
+  background-color: white;
+}
+
+.publications__card__header {
+  margin-top: 30px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  margin: 30px 30px 0 30px;
+  /* identical to box height */
+  /* Active / Regular */
   color: #24A3FF;
 }
 
-.date {
+.publication__card__date {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
+  /* identical to box height */
   letter-spacing: 1px;
   text-transform: uppercase;
+  /* Grey / Text */
   color: #B3B3BA;
+  margin: 15px 30px 30px 30px;
 }
 
-.article {
+.publications__img {
+  height: auto;
+  width: 100%;
+  max-width: 514px;
+}
+
+.publication__card__article {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #000000;
+  margin: 0 30px;
+  border-top: 4px solid #E6E6F0;
+  padding-top: 15px;
 }
 
-.theme, .date, .article {
-  display: block;
+.information {
+  border-top: 2px solid #E6E6F0;
+  margin-top: 30px;
+}
+
+.information__block {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.information__copyright {
+  margin-left: auto;
+}
+
+.footer {
+  background: #F5F5FA;
+}
+
+.information__link__address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  /* Main / Regular */
+  color: #323264;
+}
+
+.information__link__address::after {
+  content: "•";
+  font-weight: 900;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #B3B3BA;
+}
+
+.information__link__map {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* Active / Regular */
+  color: #24A3FF;
+}
+
+.information__copyright {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: right;
+  /* Grey / Text */
+  color: #B3B3BA;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.footer__contacts__number::before {
+  content: "•";
+  font-weight: 900;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #B3B3BA;
+}
+
+.footer__contacts__number::after {
+  content: "•";
+  font-weight: 900;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #B3B3BA;
+}
+
+.footer__contacts__number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: right;
+  /* Main / Alt */
+  color: #46466E;
+}
+
+.footer__contacts__mail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  /* Active / Regular */
+  color: #24A3FF;
 }
 
 /*# sourceMappingURL=style.css.map */
