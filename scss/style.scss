@@ -26,11 +26,12 @@ body{
 }
 
 .header{
-   display: none;
+    display: flex;
    padding: 50px 0;
 }
 
 .header_768{
+    visibility: hidden;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -39,7 +40,7 @@ body{
  .logo_768{
      margin-top: 30px;
  }
-
+ 
  .nav_768{
     margin-top: 30px;
  }
@@ -289,6 +290,8 @@ body{
 .block{
     display: flex;
     margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 59px;
     &__card{ 
         max-width: 494px;
         &__header{
@@ -297,12 +300,14 @@ body{
             font-size: 22px;
             line-height: 27px;
             color: #24A3FF;
+            max-width: 494px;
         }
         &__text{
             margin-top: 15px;
             font-size: 16px;
             line-height: 26px;
             color: #FFFFFF;
+            max-width: 494px;
         }
     }
 }
@@ -348,8 +353,13 @@ body{
     align-items: center;
 }
 
-.swiper-wrapper{
-padding-bottom: 52px;
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+bottom: 50px;
+}
+
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
 }
 
 .mycard{
@@ -480,11 +490,7 @@ padding-bottom: 52px;
 
 .publications{
     display:flex;
-    &__img{
-        height: auto;
-        width: 100%;
-        max-width: 514px;
-    }
+  
     &__card{
         display: flex;
         flex-direction: column;
@@ -603,6 +609,7 @@ padding-bottom: 52px;
     }
     .container{
         margin: 0 60px;
+        padding: 0;
     }
    .present__description{
        max-width: 581px;
@@ -687,8 +694,53 @@ padding-bottom: 52px;
         }
     } 
 
+
+    .block__card{
+        min-width: 294px;
+    }
+
+    .mycard{
+        flex-wrap: wrap;
+        margin-left:60px;
+        margin-right:60px;
+    }
+    .mycard__description__about{
+        min-width:588px;
+    }
+
+    .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 0px;
+        }
+
     .present__description{
         margin: 60px 0 0 0;
         max-width: 648px;
+    }
+
+    .publications{
+       flex-wrap: wrap;
+
+    }
+    .publications__card{
+        max-width: 309px;
+        &:nth-child(2){
+            margin-right: 0;
+        }
+    }
+    .publications__card__last{
+        background-color: white;
+        margin-top:30px;
+    }
+
+    .header{
+        display: none;
+    }
+    .header_768{
+        visibility: visible;
+    }
+    
+    .publications__card:last-child{
+        min-width: 648px;
+        margin-top: 30px;
     }
 }
