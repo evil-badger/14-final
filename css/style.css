@@ -536,6 +536,10 @@ body {
   fill: red;
 }
 
+.contacts__facebook_footer:hover path {
+  fill: #F0145A;
+}
+
 .contacts {
   display: flex;
   align-items: center;
@@ -1074,6 +1078,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #24A3FF;
+}
+.footer__contacts__mail:hover {
+  color: #F0145A;
 }
 
 @media (max-width: 1440px) {

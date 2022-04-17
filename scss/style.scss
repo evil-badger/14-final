@@ -144,6 +144,12 @@ body{
     }
 }
 
+.contacts__facebook_footer:hover{
+    path{
+        fill:#F0145A;
+    }
+}
+
 .contacts{
     display: flex;
     align-items:center;
@@ -645,6 +651,9 @@ bottom: 50px;
             font-size: 16px;
             line-height: 20px;
             color: #24A3FF;
+            &:hover{
+                color:#F0145A;
+            }
         }
    
     }
@@ -909,3 +918,6 @@ bottom: 50px;
         display: block;
     }
 }
+
+
+
