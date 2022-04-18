@@ -802,6 +802,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 60px;
+  padding-bottom: 60px;
 }
 
 .swiper-slide {
@@ -820,10 +821,6 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 50px;
 }
 
 .swiper-pagination-bullet {
@@ -1152,10 +1149,6 @@ body {
 
   .mycard__description {
     max-width: 504px;
-  }
-
-  .swiper-wrapper {
-    padding: 0;
   }
 
   .clients__item {
